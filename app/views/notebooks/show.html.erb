@@ -30,7 +30,7 @@
         <td><%= page.position %></td>
         <td><%= link_to page.title, notebook_page_path(@notebook, page) %></td>
         <td><%= link_to 'Edit', edit_notebook_page_path(@notebook, page) %></td>
-        <td><%= link_to 'Destroy', notebook_page_path(@notebook, page), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', notebook_page_path(@notebook, page), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
