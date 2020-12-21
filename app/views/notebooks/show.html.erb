@@ -1,14 +1,37 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<h3 class='d-flex justify-content-between mb-4'>
   <%= @notebook.title %>
-</p>
+<div class = ''>
+<%= link_to 'Back', notebooks_path, class: 'btn btn-secondary' %>
+<%= link_to 'Edit', edit_notebook_path(@notebook), class: 'btn btn-outline-primary' %> 
+</div>
+</h3>
 
-<p>
-  <strong>User:</strong>
-  <%= @notebook.user_id %>
-</p>
 
-<%= link_to 'Edit', edit_notebook_path(@notebook) %> |
-<%= link_to 'Back', notebooks_path %>
+
+<h5 class='d-flex justify-content-between'>
+<span>Pages</span>
+<%= link_to 'New Page', new_notebook_page_path(@notebook), class: 'btn btn-primary' %>
+</h5>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+    <th></th>
+      <th>Title</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @notebook.pages.each do |page| %>
+      <tr>
+        <td><%= page.position %></td>
+        <td><%= link_to page.title, notebook_page_path(@notebook, page) %></td>
+        <td><%= link_to 'Edit', edit_notebook_page_path(@notebook, page) %></td>
+        <td><%= link_to 'Destroy', notebook_page_path(@notebook, page), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
