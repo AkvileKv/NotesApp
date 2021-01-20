@@ -1,6 +1,6 @@
 # Notes app
 
-NotesApp has feature to add notebooks and have different pages in them. It uses LocalStorage to save all the notes that are created and lets you to edit and delete them.
+NotesApp has the ability to add notebooks and different pages in them. It uses LocalStorage to save all the notes that are created and allows you to edit or delete them.
 
 ## Features
 * Sign In as an existing user
