@@ -17,5 +17,5 @@ NotesApp has feature to add notebooks and have different pages in them. It uses 
 ## Built With
 * Ruby version - 2.7.0
 * Rails version - 6.1.0
-* Database - sqlite3
+* Database - sqlite3 1.4
 
