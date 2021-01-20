@@ -1,24 +1,23 @@
-# README
+# Notes app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+NotesApp has feature to add notebooks and have different pages in them. It uses LocalStorage to save all the notes that are created and lets you to edit and delete them.
 
-Things you may want to cover:
+Features
+Sign In as an existing user
+Sign Up as a new user
+Sign Out
+View Notebooks
+Add new Notebook
+Edit Notebook
+Delete Notebook
+Add new page to Notebook
+Edit Page
+Delete Page from Notebook
 
-* Ruby version
 
-* System dependencies
+* Ruby version - 2.7.0
 
-* Configuration
+* Rails version - 6.1.0
 
-* Database creation
+* Database - sqlite3
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
